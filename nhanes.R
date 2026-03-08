@@ -36,9 +36,8 @@ pacman::p_load(
 
 ####データを読み込む
 ##を読み込む
-df <- import(here("mortality_linked_file_1999_2000.csv"))
-df_base <- import(here("nhanes_baseline_1999_2000.csv"))
-df_dic <- import(here("nhanes_baseline_mortality_1999_2000_dict.csv"))
+df_sample <- NHANES
+df_nhanes_death <- import(here("mortality_linked_file_1999_2000.csv"))
 
 #dfの結合
 df <- df %>% rename(SEQN = seqn)
